@@ -24,5 +24,9 @@ public class Initializer {
 
         EmployeeService empSer = new EmployeeService();
         empSer.calculate();
+		
+		EmployeeService empSer2 = new EmployeeService();
+        empSer2.calculate();
+		
     }
 }
