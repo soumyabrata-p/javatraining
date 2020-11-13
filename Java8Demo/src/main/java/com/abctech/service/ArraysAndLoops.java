@@ -47,7 +47,7 @@ public class ArraysAndLoops {
         stringList.add("Ramesh");
         stringList.add("Veena");
         stringList.add("Rohini");
-
+        stringList.add("Aadya");
 
         for(String stringobj : stringList){
             System.out.println("Name  : " + stringobj);
