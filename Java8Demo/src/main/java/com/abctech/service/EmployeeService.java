@@ -58,6 +58,15 @@ public class EmployeeService extends AccessModifierDemo{
         Integer addition = firstValue + secondValue + thirdValue;
 
         System.out.println(" Sum is " + addition);
+        Integer subtractionResult;
+
+        if(secondValue > firstValue) {
+            subtractionResult = secondValue - firstValue;
+        } else if(thirdValue != null && secondValue != null){
+            subtractionResult = thirdValue - secondValue;
+        } else{
+            subtractionResult =  firstValue - secondValue;
+        }
     }
 
 
@@ -69,6 +78,7 @@ public class EmployeeService extends AccessModifierDemo{
         String shapeName = "Square";
         System.out.println("Shape name : " + shapeName);
     }
+
 
 
 }
