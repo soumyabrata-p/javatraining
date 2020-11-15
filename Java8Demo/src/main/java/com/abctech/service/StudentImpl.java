@@ -12,19 +12,10 @@ public class StudentImpl {
     public void getStudentDetails() {
        // StudentDetails student = populateStudentDetails();
         StudentDetails student = populateStudentDetails();
-        try {
+
             System.out.println("Name of Student  : " + student.getName());
-            //System.out.println("Address of Student  : "+ student.getAddress());
-        }catch (NullPointerException np){
-            System.out.println("Null pointer Exception occurred!!");
-        }catch (ArrayIndexOutOfBoundsException arr) {
-            System.out.println("ArrayIndexOutOfBound Exception occurred!!");
-        } catch (ArithmeticException arith){
-            System.out.println("Arithmetic Exception occurred!!");
-        }catch(Exception e){
-            System.out.println("Exception occurred!!");
-        }
-        System.out.println("Hello after exception");
+            System.out.println("Address of Student  : "+ student.getAddress());
+
 
     }
 
