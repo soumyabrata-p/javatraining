@@ -1,6 +1,8 @@
 package com.abctech.service;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -34,10 +36,10 @@ public class ArraysAndLoops {
 
         Boolean flag = true;
 
-        while(flag) {
+       /* while(flag) {
             // Write some logic
             //flag = false;
-        }
+        }*/
 
         // For Each Loop
         // ArrayList are part of Collections framework in Java
@@ -49,9 +51,15 @@ public class ArraysAndLoops {
         stringList.add("Rohini");
         stringList.add("Aadya");
 
-        for(String stringobj : stringList){
+        /*for(String stringobj : stringList){
             System.out.println("Name  : " + stringobj);
             //Testing git push
+        }*/
+        Collections.reverse(stringList);
+        Iterator iter = stringList.iterator();
+        while(iter.hasNext()) {
+            String name = (String) iter.next();
+            System.out.println("Name is :" + name);
         }
     }
 

@@ -9,7 +9,7 @@ import com.abctech.model.StudentDetails;
  */
 public class ExceptionHandling {
 
-    public void demonstrateException() {
+    public void demonstrateException() throws Exception{
 
         StudentImpl impl = new StudentImpl();
         StudentDetails student = null;
@@ -26,11 +26,11 @@ public class ExceptionHandling {
             System.out.println("Null pointer Exception occurred!!");
         }catch (ArrayIndexOutOfBoundsException arr) {
             System.out.println("ArrayIndexOutOfBound Exception occurred!!");
-        } catch (ArithmeticException arith){
+        }catch (ArithmeticException arith){
             System.out.println("Arithmetic Exception occurred!!");
         }catch(Exception e){
             System.out.println("Exception occurred!! , Exception is : " + e.getLocalizedMessage());
-         
+            throw e;
         } finally {
 
             System.out.println("Executing finally");
@@ -42,6 +42,10 @@ public class ExceptionHandling {
 
     public static void main(String args[]) {
         ExceptionHandling ex = new ExceptionHandling();
-        ex.demonstrateException();
+        try {
+            ex.demonstrateException();
+        }catch (Exception e) {
+            System.out.println(" Exception is thrown : " + e.getLocalizedMessage());
+        }
     }
 }
