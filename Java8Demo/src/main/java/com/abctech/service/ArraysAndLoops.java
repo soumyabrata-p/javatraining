@@ -131,6 +131,10 @@ public class ArraysAndLoops {
          for(String stringValue:stringList){
              System.out.println("String List:"+stringValue);
          }
+         stringList.forEach(name -> { System.out.println("String List:"+name);});
+
+
+        stringList.forEach(System.out::println);
     }
 
 }

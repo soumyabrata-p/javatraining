@@ -1,6 +1,8 @@
 package com.abctech.init;
 
+import com.abctech.lib.DemoFunctionalInterface;
 import com.abctech.lib.Employee;
+import com.abctech.lib.TwoParamFunctionalInterface;
 import com.abctech.service.ArraysAndLoops;
 import com.abctech.service.ContractorImpl;
 import com.abctech.service.EmployeeImpl;
@@ -22,8 +24,21 @@ public class Initializer {
 		EmployeeService empSer2 = new EmployeeService();
         empSer2.calculate();*/
 
-        ArraysAndLoops loops = new ArraysAndLoops();
-        loops.loopNumbers();
-		
+        /*ArraysAndLoops loops = new ArraysAndLoops();
+        loops.loopNumbers();*/
+
+        //Java 8
+        DemoFunctionalInterface func = ()  -> {return  "Sample Message";};
+
+        TwoParamFunctionalInterface intf  = (valueA,valueB) -> {return valueA + valueB;};
+
+        //Java 7
+
+       /* public String greet() {
+            return "Sample Message";
+        }
+        */
+
+        System.out.println(func.greet());
     }
 }
