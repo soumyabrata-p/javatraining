@@ -83,8 +83,8 @@ public class ArraysAndLoops {
 
         studentMap.put(null,"ABCD");
 
-       /* System.out.println("Null key value : " + studentMap.get(null));
-        System.out.println("10 key value : " + studentMap.get(10));*/
+        System.out.println("Null key value : " + studentMap.get(null));
+        System.out.println("10 key value : " + studentMap.get(10));
 
         /** Hashmap Interview questions
          * i) What is a hashmap?
@@ -100,10 +100,9 @@ public class ArraysAndLoops {
          */
 
         Iterator mapIter = studentMap.entrySet().iterator();
-        /*while(mapIter.hasNext()) {
-          //  Set<Map.Entry<Integer,String>> entry = (Set<Map.Entry<Integer, String>>) mapIter.next();
-
-        }*/
+        while(mapIter.hasNext()) {
+            Set<Map.Entry<Integer,String>> entry = (Set<Map.Entry<Integer, String>>) mapIter.next();
+        }
 
         for(Map.Entry<Integer, String> entry : studentMap.entrySet()) {
            name =  entry.getValue();
@@ -118,7 +117,7 @@ public class ArraysAndLoops {
         stringSet.add("ABCD");
         stringSet.add("Rohini");
        // stringSet.add("Raghu");
-     sortStringList();
+
 
     }
     public static void sortStringList(){
@@ -135,6 +134,7 @@ public class ArraysAndLoops {
 
 
         stringList.forEach(System.out::println);
+
     }
 
 }
