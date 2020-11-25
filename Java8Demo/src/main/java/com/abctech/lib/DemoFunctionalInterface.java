@@ -10,4 +10,8 @@ public interface DemoFunctionalInterface {
 
     public String greet();
 
+    default void greetHello() {
+        System.out.println("Greet Hello");
+    }
+
 }

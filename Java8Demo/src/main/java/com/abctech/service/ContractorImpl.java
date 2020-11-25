@@ -11,4 +11,9 @@ public class ContractorImpl implements Employee {
     public void getEmployeeSalary() {
         System.out.println("Salary of contractor is $Y");
     }
+
+    @Override
+    public void getEmployeeDetails() {
+
+    }
 }

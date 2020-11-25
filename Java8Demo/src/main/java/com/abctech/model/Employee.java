@@ -10,6 +10,7 @@ public class Employee {
     private String employeeName;
     private Integer salary;
     private String department;
+    private Integer age;
 
     public String getEmployeeName() {
         return employeeName;
@@ -35,12 +36,21 @@ public class Employee {
         this.department = department;
     }
 
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
                 "employeeName='" + employeeName + '\'' +
                 ", salary=" + salary +
                 ", department='" + department + '\'' +
+                ", age=" + age +
                 '}';
     }
 }

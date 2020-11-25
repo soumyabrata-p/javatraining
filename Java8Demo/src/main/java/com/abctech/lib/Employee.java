@@ -5,9 +5,11 @@ package com.abctech.lib;
  * Date: 11/11/2020
  * Time: 11:37 PM
  */
-@FunctionalInterface
+
 public interface Employee {
 
-    public void getEmployeeSalary();
+   // public void getEmployeeSalary();
+
+    public void getEmployeeDetails();
 
 }

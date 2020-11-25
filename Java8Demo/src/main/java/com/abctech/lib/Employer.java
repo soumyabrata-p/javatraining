@@ -7,5 +7,8 @@ package com.abctech.lib;
  */
 public interface Employer {
 
-    public void getEmployerDetails();
+   // public void getEmployerDetails();
+
+    public void getEmployeeDetails();
+
 }
