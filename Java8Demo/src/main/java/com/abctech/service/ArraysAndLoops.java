@@ -13,6 +13,8 @@ public class ArraysAndLoops {
 
     private List<Integer> numberList;
 
+    private Streams streams;
+
 
     public void loopNumbers() {
 
