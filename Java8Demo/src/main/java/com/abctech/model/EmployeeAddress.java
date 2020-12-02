@@ -1,5 +1,8 @@
 package com.abctech.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 /**
  * Created by s.purakayastha
  * Date: 12/2/2020
@@ -7,6 +10,8 @@ package com.abctech.model;
  */
 public class EmployeeAddress {
 
+    @Autowired
+    @Qualifier(value = "empContact")
     private EmployeeContact employeeContact;
     private String street;
     private String country;

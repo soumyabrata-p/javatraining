@@ -5,15 +5,35 @@ http://www.springframework.org/schema/jee  http://www.springframework.org/schema
 http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
 
+    <context:annotation-config/>
+
 <bean id ="empContact" class="com.abctech.model.EmployeeContact">
     <property name="email" value="abc@email.com"/>
     <property name="phone" value="123456"/>
 </bean>
 
+    <bean id ="empContactDuplicate" class="com.abctech.model.EmployeeContact">
+        <property name="email" value="xyz@email.com"/>
+        <property name="phone" value="123456"/>
+    </bean>
+
     <bean id="empAddress" class="com.abctech.model.EmployeeAddress">
         <property name="street" value="First street"/>
         <property name="country" value="INDIA"/>
-        <property name="employeeContact" ref="empContact"/>
+        <!-- <property name="employeeContact" ref="empContact"/>-->
     </bean>
+
+
+    <bean id="studentCont" class="com.abctech.model.StudentContact">
+       <constructor-arg type="java.lang.String" value="student@email.com"/>
+        <constructor-arg type="java.lang.Long" value="3456789"/>
+    </bean>
+
+    <bean id="studentAdd" class="com.abctech.model.StudentAddress">
+        <constructor-arg type="java.lang.String" value="Part street"/>
+        <constructor-arg type="java.lang.String" value="India"/>
+        <constructor-arg type="com.abctech.model.StudentContact" ref="studentCont"/>
+    </bean>
+
 
 </beans>
