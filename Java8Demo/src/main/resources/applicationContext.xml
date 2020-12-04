@@ -7,10 +7,13 @@ http://www.springframework.org/schema/util  http://www.springframework.org/schem
 
     <context:annotation-config/>
 
-<bean id ="empContact" class="com.abctech.model.EmployeeContact">
+    <context:component-scan base-package="com.abctech.model"></context:component-scan>
+
+<bean id ="empContact" class="com.abctech.model.EmployeeContact" >
     <property name="email" value="abc@email.com"/>
     <property name="phone" value="123456"/>
 </bean>
+
 
     <bean id ="empContactDuplicate" class="com.abctech.model.EmployeeContact">
         <property name="email" value="xyz@email.com"/>

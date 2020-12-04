@@ -13,6 +13,8 @@ public class EmployeeAddress {
     @Autowired
     @Qualifier(value = "empContact")
     private EmployeeContact employeeContact;
+    @Autowired
+    private Employee employee;
     private String street;
     private String country;
 
@@ -38,5 +40,13 @@ public class EmployeeAddress {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 }

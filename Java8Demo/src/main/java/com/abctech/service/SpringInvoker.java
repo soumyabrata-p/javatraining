@@ -22,6 +22,7 @@ public class SpringInvoker {
 
         System.out.println("Employee street address is  : " + address.getStreet());
         System.out.println("Employee email address is  : " + address.getEmployeeContact().getEmail());
+        System.out.println("Employee name is : " + address.getEmployee().getEmployeeName());
 
 
         // Constructor Injection

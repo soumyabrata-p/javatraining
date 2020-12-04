@@ -1,13 +1,18 @@
 package com.abctech.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
 /**
  * Created by s.purakayastha
  * Date: 11/20/2020
  * Time: 8:34 PM
  */
+@Component
 public class Employee {
 
-    private String employeeName;
+    private String employeeName = "Ramesh";
     private Integer salary;
     private String department;
     private Integer age;
